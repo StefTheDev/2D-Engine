@@ -11,5 +11,5 @@ public:
 
 	virtual void Render(SDL_Renderer* renderer) {}
 	virtual void Process(Uint64 deltaTime) {}
-	virtual void Construct() {}
+	virtual void Link() {}
 };

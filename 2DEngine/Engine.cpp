@@ -25,7 +25,7 @@ Engine::Engine(std::string name)
 	engineState = RUNNING;
 
 	object = new Object(typeid(1));
-	object->AddComponent<TransformComponent>();
+	//object->AddComponent<TransformComponent>();
 	object->AddComponent<SpriteComponent>(surface, renderer, "Resources/Sprites/Red.png");
 
 	std::cout << "Constructed Object with index: " << object->GetIndex().hash_code() << std::endl;

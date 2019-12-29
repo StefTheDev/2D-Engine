@@ -26,7 +26,7 @@ public:
 	{
 		T* component = new T(std::forward<A>(a)...);
 		component->object = this;
-		component->Construct();
+		component->Link();
 
 		components.insert(std::pair<std::type_index, Component*>(
 			std::type_index(typeid(T)),

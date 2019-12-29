@@ -12,10 +12,14 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>
+#include <Box2D.h>
 
 extern const int WINDOW_WIDTH;
 extern const int WINDOW_HEIGHT;
 extern Uint64 DELTATIME;
+
+const float METER_TO_PIXEL = 100.0f;
+const float PIXEL_TO_METER = (1.0f / METER_TO_PIXEL);
 
 struct Vector2
 {
